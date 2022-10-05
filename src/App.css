@@ -28,7 +28,6 @@ body {
     border: 5px solid black;
     border-radius: 5px;
     flex-wrap: wrap;
-    /*padding: 2rem 1rem;*/
     background: linear-gradient(#000, #000) no-repeat center/2px 100%;
 }
 
