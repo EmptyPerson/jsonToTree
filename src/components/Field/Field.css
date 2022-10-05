@@ -1,0 +1,28 @@
+.fields {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: auto;
+}
+
+.field {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.field input {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.field h1 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .field input {
+        width: 80%
+    }
+}

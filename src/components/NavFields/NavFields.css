@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.navMenu {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.navButton {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    padding: 0rem 0.5rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    background: none;
+}
+
+.navButton:hover {
+
+    text-decoration: solid underline black 3px;
+}
+
+.active {
+    color: #158d8d;
+}

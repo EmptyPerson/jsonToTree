@@ -1,0 +1,13 @@
+.save-button {
+    border: 1px black solid;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 1rem;
+    color: white;
+    background: #148181;
+    font-size: 1.2rem;
+}
+
+.save-button:hover {
+    background: black;
+}
