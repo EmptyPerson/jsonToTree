@@ -1,20 +1,17 @@
-export default function searchByParent(obj, activeParent) {
+export default function searchByParent(obj, path) {
 
-    if (obj.parent !== activeParent) {
-        obj.isActive = false
-    }
 
-    if (obj.parent === activeParent) {
+    if (obj.path === path) {
 
         return obj
     }
 
     for (let child of obj.children) {
 
-        if (child.parent === activeParent) {
+        if (obj.path === path) {
             return child
         }
-        let deepChild = searchByParent(child, activeParent)
+        let deepChild = searchByParent(child, path)
 
         if (deepChild) {
             return deepChild

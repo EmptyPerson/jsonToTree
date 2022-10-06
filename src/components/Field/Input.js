@@ -4,12 +4,12 @@ import searchByParent from "../manageStoreFunc/searchByParent";
 import {switchActive} from "../../store/reducerActiveBranch";
 
 
-const Input = ({parent, fields}) => {
+const Input = ({fields, path}) => {
     const tree = useSelector(state => state)
     const dispatch = useDispatch()
 
     const changeFields = (ind, newValue) => {
-        let changeBranch = searchByParent(tree, parent)
+        let changeBranch = searchByParent(tree, path)
         changeBranch.fields[ind] = newValue
         dispatch(switchActive(tree))
     }

@@ -38,6 +38,7 @@ function App() {
                 </div>
             </div>
             </div>
+            {/*<button onClick={() => {console.log(obj )}}> fafa</button>*/}
         </div>
 
     );

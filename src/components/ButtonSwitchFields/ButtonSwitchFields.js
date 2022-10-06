@@ -4,7 +4,7 @@ import {switchActive} from "../../store/reducerActiveBranch";
 import searchByParent from "../manageStoreFunc/searchByParent";
 
 
-const ButtonSwitchFields = ({parent, styles}) => {
+const ButtonSwitchFields = ({parent, path, styles}) => {
     const obj = useSelector(state => state)
     const dispatch = useDispatch()
 
@@ -13,7 +13,7 @@ const ButtonSwitchFields = ({parent, styles}) => {
 
         for (let child of obj.children) {
             child.isActive = false
-            searchByParent(child)
+            Disactive(child)
         }
 
 
@@ -24,7 +24,7 @@ const ButtonSwitchFields = ({parent, styles}) => {
     const onclick = () => {
         Disactive(obj)
         dispatch(switchActive(obj))
-        let result = searchByParent(obj, parent)
+        let result = searchByParent(obj, path)
 
         if (result) {
             result.isActive = !result.isActive
